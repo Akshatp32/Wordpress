@@ -20,7 +20,7 @@ environment {
         stage('Deploy') {
             steps {
                 script {
-                    sshagent(credentials: [${SSH_CREDENTIALS}]) {
+                    sshagent(credentials: [SSH_CREDENTIALS]) {
                         sh """
                             ssh -o StrictHostKeyChecking=no ${REMOTE_USER}@${REMOTE_HOST} '
                                 cd ${APP_DIRECTORY}
