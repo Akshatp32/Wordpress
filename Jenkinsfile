@@ -17,7 +17,6 @@ environment {
                 checkout scm
             }
         }
-    stages {
         stage('Deploy') {
             steps {
                 script {
@@ -34,6 +33,5 @@ environment {
                 }
             }
         }
-    }
     }
 }
