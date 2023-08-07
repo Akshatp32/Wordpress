@@ -23,6 +23,7 @@ environment {
                     sshagent(credentials: [SSH_CREDENTIALS]) {
                         sh """
                             ssh -o StrictHostKeyChecking=no ${REMOTE_USER}@${REMOTE_HOST} '
+                                chown -R httpd:httpd /var/www/html
                                 git config --global --add safe.directory /var/www/html
                                 cd ${APP_DIRECTORY}
                                 git pull ${Repo_url}
