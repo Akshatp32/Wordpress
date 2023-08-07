@@ -1,4 +1,4 @@
-peline {
+pipeline {
     agent {
         label 'aws'
     }
@@ -37,4 +37,3 @@ environment {
     }
     }
 }
--
