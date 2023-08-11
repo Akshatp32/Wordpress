@@ -5,7 +5,7 @@ pipeline {
 
 environment {
         REMOTE_USER = 'ec2-user'  
-        REMOTE_HOST = '15.206.166.13'
+        REMOTE_HOST = '35.154.43.172'
         Repo_url = 'https://github.com/Akshatp32/Wordpress.git'
         SSH_CREDENTIALS = '38921be7-1df0-4485-a6cb-e730ea1d16bf' 
     }
